@@ -14,6 +14,6 @@ struct Task : Identifiable {
     var toDoItem = String()
 }
 
-class TaskStore : ObservedObject {
+class TaskStore : ObservableObject {
     @Published var tasks = [Task]()
 }
